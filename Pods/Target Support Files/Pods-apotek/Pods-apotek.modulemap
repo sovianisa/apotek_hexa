@@ -1,0 +1,6 @@
+framework module Pods_apotek {
+  umbrella header "Pods-apotek-umbrella.h"
+
+  export *
+  module * { export * }
+}
