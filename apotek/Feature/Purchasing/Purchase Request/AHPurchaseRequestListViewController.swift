@@ -29,7 +29,7 @@ class AHPurchaseRequestListViewController: UIViewController, UITableViewDelegate
     }
 
     func settingNav() {
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addProductUnit))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addPurchaseRequest))
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -75,7 +75,7 @@ class AHPurchaseRequestListViewController: UIViewController, UITableViewDelegate
         tableView.reloadData()
     }
 
-    @objc func addProductUnit() {
+    @objc func addPurchaseRequest() {
         goToFormPage(isEdit: false, purchaseRequest: AHPurchaseRequest())
     }
 

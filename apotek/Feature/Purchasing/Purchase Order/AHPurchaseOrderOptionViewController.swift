@@ -30,7 +30,7 @@ class AHPurchaseOrderOptionViewController: UIViewController, UITableViewDelegate
     }
 
     func settingUp() {
-        self.title = (isSupplierMode == true) ? "Choose Supplier" : "Choose Product Request"
+        self.title = (isSupplierMode == true) ? "Choose Supplier" : "Choose Purchase Request"
 
         suppliers = getAllSuppliers()
         purchaseRequests = getAllPurchaseRequests()

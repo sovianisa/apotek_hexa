@@ -47,6 +47,7 @@
 		A7771B5123ABE22E00CF5BDA /* AHShop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7771B5023ABE22E00CF5BDA /* AHShop.storyboard */; };
 		A7771B5323ABE6BD00CF5BDA /* AHProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7771B5223ABE6BD00CF5BDA /* AHProduct.swift */; };
 		A7771B5523ABE97000CF5BDA /* AHProductCrud.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7771B5423ABE97000CF5BDA /* AHProductCrud.swift */; };
+		A793068623D1B52000849A82 /* FormTrans3TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A793068523D1B52000849A82 /* FormTrans3TableViewCell.swift */; };
 		A79A182B23AC6CD400469EF6 /* AHProductFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79A182A23AC6CD400469EF6 /* AHProductFormViewController.swift */; };
 		A79A182D23AC6CF700469EF6 /* AHProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79A182C23AC6CF700469EF6 /* AHProductListViewController.swift */; };
 		A79A182F23AC6D4600469EF6 /* AHProduct.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A79A182E23AC6D4500469EF6 /* AHProduct.storyboard */; };
@@ -80,6 +81,13 @@
 		A7C463BB23D1604900950D84 /* AHPurchaseOrderCrud.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C463BA23D1604900950D84 /* AHPurchaseOrderCrud.swift */; };
 		A7C463BD23D16B0B00950D84 /* FormTrans2TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C463BC23D16B0B00950D84 /* FormTrans2TableViewCell.swift */; };
 		A7C463BF23D1913500950D84 /* AHPurchaseOrderOptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C463BE23D1913500950D84 /* AHPurchaseOrderOptionViewController.swift */; };
+		A7C463C123D1A8C100950D84 /* AHReceiving.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7C463C023D1A8C100950D84 /* AHReceiving.storyboard */; };
+		A7C463C323D1A8D400950D84 /* AHReceivingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C463C223D1A8D400950D84 /* AHReceivingListViewController.swift */; };
+		A7C463C523D1A8F700950D84 /* AHReceivingFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C463C423D1A8F700950D84 /* AHReceivingFormViewController.swift */; };
+		A7C463C723D1A90700950D84 /* AHReceivingCrud.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C463C623D1A90700950D84 /* AHReceivingCrud.swift */; };
+		A7C463C923D1A96B00950D84 /* AHReceiving.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C463C823D1A96B00950D84 /* AHReceiving.swift */; };
+		A7C463CB23D1A97C00950D84 /* AHReceivingDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C463CA23D1A97C00950D84 /* AHReceivingDetail.swift */; };
+		A7C463CD23D1ABD000950D84 /* AHReceivingOptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C463CC23D1ABD000950D84 /* AHReceivingOptionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -127,6 +135,7 @@
 		A7771B5023ABE22E00CF5BDA /* AHShop.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AHShop.storyboard; sourceTree = "<group>"; };
 		A7771B5223ABE6BD00CF5BDA /* AHProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHProduct.swift; sourceTree = "<group>"; };
 		A7771B5423ABE97000CF5BDA /* AHProductCrud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHProductCrud.swift; sourceTree = "<group>"; };
+		A793068523D1B52000849A82 /* FormTrans3TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTrans3TableViewCell.swift; sourceTree = "<group>"; };
 		A79A182A23AC6CD400469EF6 /* AHProductFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHProductFormViewController.swift; sourceTree = "<group>"; };
 		A79A182C23AC6CF700469EF6 /* AHProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHProductListViewController.swift; sourceTree = "<group>"; };
 		A79A182E23AC6D4500469EF6 /* AHProduct.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AHProduct.storyboard; sourceTree = "<group>"; };
@@ -160,6 +169,13 @@
 		A7C463BA23D1604900950D84 /* AHPurchaseOrderCrud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHPurchaseOrderCrud.swift; sourceTree = "<group>"; };
 		A7C463BC23D16B0B00950D84 /* FormTrans2TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTrans2TableViewCell.swift; sourceTree = "<group>"; };
 		A7C463BE23D1913500950D84 /* AHPurchaseOrderOptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHPurchaseOrderOptionViewController.swift; sourceTree = "<group>"; };
+		A7C463C023D1A8C100950D84 /* AHReceiving.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AHReceiving.storyboard; sourceTree = "<group>"; };
+		A7C463C223D1A8D400950D84 /* AHReceivingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHReceivingListViewController.swift; sourceTree = "<group>"; };
+		A7C463C423D1A8F700950D84 /* AHReceivingFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHReceivingFormViewController.swift; sourceTree = "<group>"; };
+		A7C463C623D1A90700950D84 /* AHReceivingCrud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHReceivingCrud.swift; sourceTree = "<group>"; };
+		A7C463C823D1A96B00950D84 /* AHReceiving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHReceiving.swift; sourceTree = "<group>"; };
+		A7C463CA23D1A97C00950D84 /* AHReceivingDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHReceivingDetail.swift; sourceTree = "<group>"; };
+		A7C463CC23D1ABD000950D84 /* AHReceivingOptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHReceivingOptionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -370,6 +386,11 @@
 		A7771B0823AB312700CF5BDA /* Receiving */ = {
 			isa = PBXGroup;
 			children = (
+				A7C463C023D1A8C100950D84 /* AHReceiving.storyboard */,
+				A7C463C223D1A8D400950D84 /* AHReceivingListViewController.swift */,
+				A7C463C423D1A8F700950D84 /* AHReceivingFormViewController.swift */,
+				A7C463C623D1A90700950D84 /* AHReceivingCrud.swift */,
+				A7C463CC23D1ABD000950D84 /* AHReceivingOptionViewController.swift */,
 			);
 			path = Receiving;
 			sourceTree = "<group>";
@@ -470,6 +491,8 @@
 				A79A183F23AD294400469EF6 /* AHProductUnitPrice.swift */,
 				A79A184123AD2AE600469EF6 /* AHPurchaseOrder.swift */,
 				A79A184323AD2C8300469EF6 /* AHPurchaseOrderDetail.swift */,
+				A7C463C823D1A96B00950D84 /* AHReceiving.swift */,
+				A7C463CA23D1A97C00950D84 /* AHReceivingDetail.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -489,6 +512,7 @@
 				A79A183623AC772100469EF6 /* FormOptionTableViewCell.swift */,
 				A765FC1323D0A8FA008257AB /* FormTransTableViewCell.swift */,
 				A7C463BC23D16B0B00950D84 /* FormTrans2TableViewCell.swift */,
+				A793068523D1B52000849A82 /* FormTrans3TableViewCell.swift */,
 			);
 			path = Form;
 			sourceTree = "<group>";
@@ -591,6 +615,7 @@
 				A7771AEA23AA089700CF5BDA /* Assets.xcassets in Resources */,
 				A7771B3D23ABD88700CF5BDA /* AHClassOfDrug.storyboard in Resources */,
 				A79A186223AD3F9300469EF6 /* AHProductUnitPrice.storyboard in Resources */,
+				A7C463C123D1A8C100950D84 /* AHReceiving.storyboard in Resources */,
 				A7771B3323ABD06000CF5BDA /* AHProductCategory.storyboard in Resources */,
 				A7C463B523D15FFD00950D84 /* AHPurchaseOrder.storyboard in Resources */,
 				A7771AE823AA089400CF5BDA /* AHMenu.storyboard in Resources */,
@@ -658,12 +683,14 @@
 				A7771B4F23ABE19200CF5BDA /* AHShopFormViewController.swift in Sources */,
 				A7771B4523ABDD8600CF5BDA /* AHSupplierListViewController.swift in Sources */,
 				A79A184223AD2AE600469EF6 /* AHPurchaseOrder.swift in Sources */,
+				A7C463CD23D1ABD000950D84 /* AHReceivingOptionViewController.swift in Sources */,
 				A7771B3523ABD78F00CF5BDA /* AHClassOfDrug.swift in Sources */,
 				A7771B1F23AB77F300CF5BDA /* AHFactoryFormViewController.swift in Sources */,
 				A79A183123AC713E00469EF6 /* AHProductFormOptionViewController.swift in Sources */,
 				A79A184423AD2C8300469EF6 /* AHPurchaseOrderDetail.swift in Sources */,
 				A7771B2D23ABCF9000CF5BDA /* AHProductCategoryListViewController.swift in Sources */,
 				A7C463BB23D1604900950D84 /* AHPurchaseOrderCrud.swift in Sources */,
+				A7C463C523D1A8F700950D84 /* AHReceivingFormViewController.swift in Sources */,
 				A79A185C23AD3F0D00469EF6 /* AHProductUnitPriceFormViewController.swift in Sources */,
 				A79A186023AD3F3700469EF6 /* AHProductUnitPriceFormOptionViewController.swift in Sources */,
 				A7771AE123AA089400CF5BDA /* AppDelegate.swift in Sources */,
@@ -684,8 +711,10 @@
 				A79A185823AD370200469EF6 /* AHProductUnitFormOptionViewController.swift in Sources */,
 				A7771B4923ABE0EC00CF5BDA /* AHShop.swift in Sources */,
 				A79A183323AC731200469EF6 /* Style2TableViewCell.swift in Sources */,
+				A7C463C923D1A96B00950D84 /* AHReceiving.swift in Sources */,
 				A7771B2F23ABCFAF00CF5BDA /* AHProductCategoryFormViewController.swift in Sources */,
 				A7771B1B23AB656000CF5BDA /* AHFactory.swift in Sources */,
+				A7C463CB23D1A97C00950D84 /* AHReceivingDetail.swift in Sources */,
 				A79A183E23AD25D300469EF6 /* AHProductUnit.swift in Sources */,
 				A765FC1423D0A8FA008257AB /* FormTransTableViewCell.swift in Sources */,
 				A79A185023AD368500469EF6 /* AHProductUnitFormViewController.swift in Sources */,
@@ -700,8 +729,11 @@
 				A79A184023AD294400469EF6 /* AHProductUnitPrice.swift in Sources */,
 				A7771B3923ABD80400CF5BDA /* AHClassOfDrugFormViewController.swift in Sources */,
 				A79A184823AD321C00469EF6 /* AHPurchaseRequestFormViewController.swift in Sources */,
+				A7C463C723D1A90700950D84 /* AHReceivingCrud.swift in Sources */,
+				A7C463C323D1A8D400950D84 /* AHReceivingListViewController.swift in Sources */,
 				A7771B3F23ABDCBA00CF5BDA /* AHSupplier.swift in Sources */,
 				A79A182B23AC6CD400469EF6 /* AHProductFormViewController.swift in Sources */,
+				A793068623D1B52000849A82 /* FormTrans3TableViewCell.swift in Sources */,
 				A7771B2323AB801500CF5BDA /* AHFactoryCrud.swift in Sources */,
 				A79A185E23AD3F2100469EF6 /* AHProductUnitPriceListViewController.swift in Sources */,
 				A79A184A23AD322E00469EF6 /* AHPurchaseRequestListViewController.swift in Sources */,

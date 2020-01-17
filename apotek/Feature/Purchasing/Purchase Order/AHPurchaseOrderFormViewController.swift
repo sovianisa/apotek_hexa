@@ -113,7 +113,6 @@ class AHPurchaseOrderFormViewController: UIViewController, UITableViewDataSource
             cell.setCell(text1: text1, text2: text2, price: price, text3: text3, number: indexPath.row + 1, tag: indexPath.row)
 
             cell.priceTextField.delegate = self
-            cell.deleteButton.addTarget(self, action: #selector(deleteOrderDetail(sender:)), for: .touchUpInside)
 
             return cell
         } else {

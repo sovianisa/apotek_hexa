@@ -126,6 +126,8 @@ class AHDashboardMenuViewController: UIViewController, UICollectionViewDelegate,
                 goToPurchaseRequestPage()
             } else if indexPath.row == 1 {
                 goToPurchaseOrderPage()
+            } else if indexPath.row == 2 {
+                goToReceivingPage()
             } else if indexPath.row == 3 {
                 goToSupplierPage()
             }
@@ -189,13 +191,20 @@ class AHDashboardMenuViewController: UIViewController, UICollectionViewDelegate,
         let storyboard = UIStoryboard(name: "AHProductUnitPrice", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "AHProductUnitPriceListViewController") as! AHProductUnitPriceListViewController
         self.navigationController?.pushViewController(vc, animated: true)
-        
+
     }
-    
-    func goToPurchaseOrderPage(){
+
+    func goToPurchaseOrderPage() {
         let storyboard = UIStoryboard(name: "AHPurchaseOrder", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "AHPurchaseOrderListViewController") as! AHPurchaseOrderListViewController
         self.navigationController?.pushViewController(vc, animated: true)
+    }
+
+    func goToReceivingPage() {
+        let storyboard = UIStoryboard(name: "AHReceiving", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "AHReceivingListViewController") as! AHReceivingListViewController
+        self.navigationController?.pushViewController(vc, animated: true)
+
     }
 
 

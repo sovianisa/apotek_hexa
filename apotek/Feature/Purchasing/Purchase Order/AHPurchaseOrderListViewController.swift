@@ -29,7 +29,7 @@ class AHPurchaseOrderListViewController: UIViewController, UITableViewDelegate, 
     }
 
     func settingNav() {
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addProductUnit))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addPurchaseOrder))
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -38,9 +38,9 @@ class AHPurchaseOrderListViewController: UIViewController, UITableViewDelegate, 
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Style1TableViewCell", for: indexPath) as! Style1TableViewCell
-        let productOrder = list[indexPath.row]
+        let purchaseOrder = list[indexPath.row]
 
-        cell.setCell(text1: "NO : \(productOrder.po_no)", text2: "Date: \(dateString(date: productOrder.po_order_date)) | created by: \(productOrder.po_create_by)", text3: "", number: "\(indexPath.row + 1)")
+        cell.setCell(text1: "NO : \(purchaseOrder.po_no)", text2: "Date: \(dateString(date: purchaseOrder.po_order_date)) | created by: \(purchaseOrder.po_create_by)", text3: "", number: "\(indexPath.row + 1)")
 
         cell.editButton.addTarget(self, action: #selector(editPurchaseOrder(sender:)), for: .touchUpInside)
         cell.editButton.tag = indexPath.row
@@ -75,7 +75,7 @@ class AHPurchaseOrderListViewController: UIViewController, UITableViewDelegate, 
         tableView.reloadData()
     }
 
-    @objc func addProductUnit() {
+    @objc func addPurchaseOrder() {
         goToFormPage(isEdit: false, purchaseOrder: AHPurchaseOrder())
     }
 

@@ -29,7 +29,7 @@ class AHProductUnitPriceListViewController: UIViewController, UITableViewDelegat
     }
 
     func settingNav() {
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addProductUnit))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addProductUnitPrice))
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -73,7 +73,7 @@ class AHProductUnitPriceListViewController: UIViewController, UITableViewDelegat
         tableView.reloadData()
     }
 
-    @objc func addProductUnit() {
+    @objc func addProductUnitPrice() {
         goToFormPage(isEdit: false, productUnitPrice: AHProductUnitPrice())
     }
 
