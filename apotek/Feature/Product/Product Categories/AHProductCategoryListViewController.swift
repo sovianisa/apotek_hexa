@@ -49,7 +49,7 @@ class AHProductCategoryListViewController: UIViewController, UITableViewDelegate
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 150
+        return 90
     }
 
     @objc func editCategory(sender: UIButton) {

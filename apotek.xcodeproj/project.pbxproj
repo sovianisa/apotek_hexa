@@ -74,6 +74,12 @@
 		A79A186023AD3F3700469EF6 /* AHProductUnitPriceFormOptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79A185F23AD3F3700469EF6 /* AHProductUnitPriceFormOptionViewController.swift */; };
 		A79A186223AD3F9300469EF6 /* AHProductUnitPrice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A79A186123AD3F9300469EF6 /* AHProductUnitPrice.storyboard */; };
 		A79EA22623AE076A006D12D2 /* DatePickerDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79EA22523AE076A006D12D2 /* DatePickerDialog.swift */; };
+		A7C463B523D15FFD00950D84 /* AHPurchaseOrder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7C463B423D15FFD00950D84 /* AHPurchaseOrder.storyboard */; };
+		A7C463B723D1601800950D84 /* AHPurchaseOrderFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C463B623D1601800950D84 /* AHPurchaseOrderFormViewController.swift */; };
+		A7C463B923D1603600950D84 /* AHPurchaseOrderListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C463B823D1603600950D84 /* AHPurchaseOrderListViewController.swift */; };
+		A7C463BB23D1604900950D84 /* AHPurchaseOrderCrud.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C463BA23D1604900950D84 /* AHPurchaseOrderCrud.swift */; };
+		A7C463BD23D16B0B00950D84 /* FormTrans2TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C463BC23D16B0B00950D84 /* FormTrans2TableViewCell.swift */; };
+		A7C463BF23D1913500950D84 /* AHPurchaseOrderOptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C463BE23D1913500950D84 /* AHPurchaseOrderOptionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -148,6 +154,12 @@
 		A79A185F23AD3F3700469EF6 /* AHProductUnitPriceFormOptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHProductUnitPriceFormOptionViewController.swift; sourceTree = "<group>"; };
 		A79A186123AD3F9300469EF6 /* AHProductUnitPrice.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AHProductUnitPrice.storyboard; sourceTree = "<group>"; };
 		A79EA22523AE076A006D12D2 /* DatePickerDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerDialog.swift; sourceTree = "<group>"; };
+		A7C463B423D15FFD00950D84 /* AHPurchaseOrder.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AHPurchaseOrder.storyboard; sourceTree = "<group>"; };
+		A7C463B623D1601800950D84 /* AHPurchaseOrderFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHPurchaseOrderFormViewController.swift; sourceTree = "<group>"; };
+		A7C463B823D1603600950D84 /* AHPurchaseOrderListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHPurchaseOrderListViewController.swift; sourceTree = "<group>"; };
+		A7C463BA23D1604900950D84 /* AHPurchaseOrderCrud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHPurchaseOrderCrud.swift; sourceTree = "<group>"; };
+		A7C463BC23D16B0B00950D84 /* FormTrans2TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTrans2TableViewCell.swift; sourceTree = "<group>"; };
+		A7C463BE23D1913500950D84 /* AHPurchaseOrderOptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHPurchaseOrderOptionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -346,6 +358,11 @@
 		A7771B0723AB312000CF5BDA /* Purchase Order */ = {
 			isa = PBXGroup;
 			children = (
+				A7C463B423D15FFD00950D84 /* AHPurchaseOrder.storyboard */,
+				A7C463B623D1601800950D84 /* AHPurchaseOrderFormViewController.swift */,
+				A7C463B823D1603600950D84 /* AHPurchaseOrderListViewController.swift */,
+				A7C463BA23D1604900950D84 /* AHPurchaseOrderCrud.swift */,
+				A7C463BE23D1913500950D84 /* AHPurchaseOrderOptionViewController.swift */,
 			);
 			path = "Purchase Order";
 			sourceTree = "<group>";
@@ -471,6 +488,7 @@
 				A7771B2623AB852700CF5BDA /* FormExecuteButtonTableViewCell.swift */,
 				A79A183623AC772100469EF6 /* FormOptionTableViewCell.swift */,
 				A765FC1323D0A8FA008257AB /* FormTransTableViewCell.swift */,
+				A7C463BC23D16B0B00950D84 /* FormTrans2TableViewCell.swift */,
 			);
 			path = Form;
 			sourceTree = "<group>";
@@ -574,6 +592,7 @@
 				A7771B3D23ABD88700CF5BDA /* AHClassOfDrug.storyboard in Resources */,
 				A79A186223AD3F9300469EF6 /* AHProductUnitPrice.storyboard in Resources */,
 				A7771B3323ABD06000CF5BDA /* AHProductCategory.storyboard in Resources */,
+				A7C463B523D15FFD00950D84 /* AHPurchaseOrder.storyboard in Resources */,
 				A7771AE823AA089400CF5BDA /* AHMenu.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -635,6 +654,7 @@
 				A79A184C23AD323F00469EF6 /* AHPurchaseRequestCrud.swift in Sources */,
 				A79EA22623AE076A006D12D2 /* DatePickerDialog.swift in Sources */,
 				A7771B5323ABE6BD00CF5BDA /* AHProduct.swift in Sources */,
+				A7C463BF23D1913500950D84 /* AHPurchaseOrderOptionViewController.swift in Sources */,
 				A7771B4F23ABE19200CF5BDA /* AHShopFormViewController.swift in Sources */,
 				A7771B4523ABDD8600CF5BDA /* AHSupplierListViewController.swift in Sources */,
 				A79A184223AD2AE600469EF6 /* AHPurchaseOrder.swift in Sources */,
@@ -643,6 +663,7 @@
 				A79A183123AC713E00469EF6 /* AHProductFormOptionViewController.swift in Sources */,
 				A79A184423AD2C8300469EF6 /* AHPurchaseOrderDetail.swift in Sources */,
 				A7771B2D23ABCF9000CF5BDA /* AHProductCategoryListViewController.swift in Sources */,
+				A7C463BB23D1604900950D84 /* AHPurchaseOrderCrud.swift in Sources */,
 				A79A185C23AD3F0D00469EF6 /* AHProductUnitPriceFormViewController.swift in Sources */,
 				A79A186023AD3F3700469EF6 /* AHProductUnitPriceFormOptionViewController.swift in Sources */,
 				A7771AE123AA089400CF5BDA /* AppDelegate.swift in Sources */,
@@ -656,6 +677,7 @@
 				A7771B4B23ABE16300CF5BDA /* AHShopCrud.swift in Sources */,
 				A7771AF723AA091D00CF5BDA /* AHDashboardMenuViewController.swift in Sources */,
 				A7771B1D23AB77C000CF5BDA /* AHFactoryListViewController.swift in Sources */,
+				A7C463B923D1603600950D84 /* AHPurchaseOrderListViewController.swift in Sources */,
 				A79A185223AD36AF00469EF6 /* AHProductUnitListViewController.swift in Sources */,
 				A79A183723AC772100469EF6 /* FormOptionTableViewCell.swift in Sources */,
 				A7771AF923AA099700CF5BDA /* AHMenuCollectionViewCell.swift in Sources */,
@@ -668,11 +690,13 @@
 				A765FC1423D0A8FA008257AB /* FormTransTableViewCell.swift in Sources */,
 				A79A185023AD368500469EF6 /* AHProductUnitFormViewController.swift in Sources */,
 				A7771AFB23AB254E00CF5BDA /* HeaderCollectionReusableView.swift in Sources */,
+				A7C463B723D1601800950D84 /* AHPurchaseOrderFormViewController.swift in Sources */,
 				A7771B3123ABCFC900CF5BDA /* AHProductCategoryCrud.swift in Sources */,
 				A79A185423AD36BE00469EF6 /* AHProductUnitCrud.swift in Sources */,
 				A7771B4D23ABE17D00CF5BDA /* AHShopListViewController.swift in Sources */,
 				A7771B2123AB7BF700CF5BDA /* Style1TableViewCell.swift in Sources */,
 				A7771AE323AA089400CF5BDA /* SceneDelegate.swift in Sources */,
+				A7C463BD23D16B0B00950D84 /* FormTrans2TableViewCell.swift in Sources */,
 				A79A184023AD294400469EF6 /* AHProductUnitPrice.swift in Sources */,
 				A7771B3923ABD80400CF5BDA /* AHClassOfDrugFormViewController.swift in Sources */,
 				A79A184823AD321C00469EF6 /* AHPurchaseRequestFormViewController.swift in Sources */,

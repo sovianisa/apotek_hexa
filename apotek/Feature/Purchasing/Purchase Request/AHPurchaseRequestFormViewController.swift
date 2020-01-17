@@ -20,8 +20,8 @@ class AHPurchaseRequestFormViewController: UIViewController, UITableViewDataSour
     @IBOutlet weak var noPRLabel: UILabel!
     @IBOutlet weak var barcodeTextField: UITextField!
 
-    let listInputs = ["No :", "Created Date", "Created By", "Notes", "Product List"]
-    var listValues = ["", Date(), "", "", ""] as [Any]
+    let listInputs = ["No :", "Created Date", "Created By", "Notes"]
+    var listValues = ["", Date(), "", ""] as [Any]
     var pr_details = [AHPurchaseRequestDetail]()
     var purchaseRequest = AHPurchaseRequest()
     var isEdit = false
@@ -237,16 +237,19 @@ class AHPurchaseRequestFormViewController: UIViewController, UITableViewDataSour
         if textField == barcodeTextField {
 
         } else {
-            let requestDetail = pr_details[textField.tag]
-            let quantity = Int(textField.text ?? "")
 
-            if isEdit == true {
-                let realm = try! Realm()
-                try! realm.write() {
+            if textField.tag < pr_details.count {
+                let requestDetail = pr_details[textField.tag]
+                let quantity = Int(textField.text ?? "")
+
+                if isEdit == true {
+                    let realm = try! Realm()
+                    try! realm.write() {
+                        requestDetail.prd_quantity = quantity ?? 0
+                    }
+                } else {
                     requestDetail.prd_quantity = quantity ?? 0
                 }
-            } else {
-                requestDetail.prd_quantity = quantity ?? 0
             }
 
         }

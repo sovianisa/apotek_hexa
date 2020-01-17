@@ -12,6 +12,7 @@ class FormExecuteButtonTableViewCell: UITableViewCell {
 
    
     @IBOutlet weak var executeButton: UIButton!
+    @IBOutlet weak var totalLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
