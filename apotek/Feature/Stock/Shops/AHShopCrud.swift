@@ -19,6 +19,26 @@ func getAllShops() -> [AHShop] {
     return list
 }
 
+func getSelectedShop() -> AHShop {
+    let realm = try! Realm()
+    let listed = realm.objects(AHShop.self).filter("shop_status = 1")
+    var list = [AHShop]()
+    for item in listed {
+        list.append(item)
+    }
+    
+    if list.count > 0 {
+        return list[0]
+    } else {
+        let shop = AHShop()
+        shop.shop_name = "Shop Utama"
+        shop.shop_city = "Bandung"
+        shop.shop_address = "Jalan Utama No.1"
+        shop.shop_phone = "0228478374"
+        return shop
+    }
+}
+
 func saveShop(shop: AHShop) {
     let realm = try! Realm()
     try! realm.write {

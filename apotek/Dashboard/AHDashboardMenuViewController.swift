@@ -27,7 +27,7 @@ class AHDashboardMenuViewController: UIViewController, UICollectionViewDelegate,
     let menuStock = ["Stock \nUnit", "Shops"]
     let menuStockImages = ["menu-stock-unit", "menu-shops"]
 
-    let menuSales = ["Transaction"]
+    let menuSales = ["Sales"]
     let menuSaleImages = ["menu-transaction"]
 
     let sectionInsets = UIEdgeInsets(top: 50.0, left: 40.0, bottom: 50.0, right: 40.0)
@@ -132,7 +132,9 @@ class AHDashboardMenuViewController: UIViewController, UICollectionViewDelegate,
                 goToSupplierPage()
             }
         } else if indexPath.section == 4 {
-            if indexPath.row == 1 {
+            if indexPath.row == 0 {
+                goToStockUnitPage()
+            } else if indexPath.row == 1 {
                 goToShopPage()
             }
         }
@@ -206,7 +208,12 @@ class AHDashboardMenuViewController: UIViewController, UICollectionViewDelegate,
         self.navigationController?.pushViewController(vc, animated: true)
 
     }
-
+    
+    func goToStockUnitPage(){
+        let storyboard = UIStoryboard(name: "AHStockUnit", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "AHStockUnitListViewController") as! AHStockUnitListViewController
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 
 }
 
