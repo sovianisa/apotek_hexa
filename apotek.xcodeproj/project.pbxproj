@@ -56,6 +56,11 @@
 		A793069423D2DD6B00849A82 /* AHStockUnitFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A793069323D2DD6B00849A82 /* AHStockUnitFormViewController.swift */; };
 		A793069623D2DD8000849A82 /* AHStockUnitListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A793069523D2DD8000849A82 /* AHStockUnitListViewController.swift */; };
 		A793069823D2DD9300849A82 /* AHStockUnitFormOptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A793069723D2DD9300849A82 /* AHStockUnitFormOptionViewController.swift */; };
+		A793069A23D3098D00849A82 /* AHSales.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A793069923D3098D00849A82 /* AHSales.storyboard */; };
+		A793069C23D309A000849A82 /* AHSalesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A793069B23D309A000849A82 /* AHSalesListViewController.swift */; };
+		A793069E23D309B800849A82 /* AHSalesFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A793069D23D309B800849A82 /* AHSalesFormViewController.swift */; };
+		A79306A223D30A0900849A82 /* AHSalesCrud.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79306A123D30A0900849A82 /* AHSalesCrud.swift */; };
+		A79306A423D31A6000849A82 /* AHSalesFormOptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79306A323D31A6000849A82 /* AHSalesFormOptionViewController.swift */; };
 		A79A182B23AC6CD400469EF6 /* AHProductFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79A182A23AC6CD400469EF6 /* AHProductFormViewController.swift */; };
 		A79A182D23AC6CF700469EF6 /* AHProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79A182C23AC6CF700469EF6 /* AHProductListViewController.swift */; };
 		A79A182F23AC6D4600469EF6 /* AHProduct.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A79A182E23AC6D4500469EF6 /* AHProduct.storyboard */; };
@@ -152,6 +157,11 @@
 		A793069323D2DD6B00849A82 /* AHStockUnitFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHStockUnitFormViewController.swift; sourceTree = "<group>"; };
 		A793069523D2DD8000849A82 /* AHStockUnitListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHStockUnitListViewController.swift; sourceTree = "<group>"; };
 		A793069723D2DD9300849A82 /* AHStockUnitFormOptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHStockUnitFormOptionViewController.swift; sourceTree = "<group>"; };
+		A793069923D3098D00849A82 /* AHSales.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AHSales.storyboard; sourceTree = "<group>"; };
+		A793069B23D309A000849A82 /* AHSalesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHSalesListViewController.swift; sourceTree = "<group>"; };
+		A793069D23D309B800849A82 /* AHSalesFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHSalesFormViewController.swift; sourceTree = "<group>"; };
+		A79306A123D30A0900849A82 /* AHSalesCrud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHSalesCrud.swift; sourceTree = "<group>"; };
+		A79306A323D31A6000849A82 /* AHSalesFormOptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHSalesFormOptionViewController.swift; sourceTree = "<group>"; };
 		A79A182A23AC6CD400469EF6 /* AHProductFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHProductFormViewController.swift; sourceTree = "<group>"; };
 		A79A182C23AC6CF700469EF6 /* AHProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHProductListViewController.swift; sourceTree = "<group>"; };
 		A79A182E23AC6D4500469EF6 /* AHProduct.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AHProduct.storyboard; sourceTree = "<group>"; };
@@ -314,6 +324,11 @@
 		A7771AFF23AB301000CF5BDA /* Sales */ = {
 			isa = PBXGroup;
 			children = (
+				A793069923D3098D00849A82 /* AHSales.storyboard */,
+				A793069B23D309A000849A82 /* AHSalesListViewController.swift */,
+				A793069D23D309B800849A82 /* AHSalesFormViewController.swift */,
+				A79306A123D30A0900849A82 /* AHSalesCrud.swift */,
+				A79306A323D31A6000849A82 /* AHSalesFormOptionViewController.swift */,
 			);
 			path = Sales;
 			sourceTree = "<group>";
@@ -631,6 +646,7 @@
 				A79A184623AD31BC00469EF6 /* AHPurchaseRequest.storyboard in Resources */,
 				A7771AEA23AA089700CF5BDA /* Assets.xcassets in Resources */,
 				A7771B3D23ABD88700CF5BDA /* AHClassOfDrug.storyboard in Resources */,
+				A793069A23D3098D00849A82 /* AHSales.storyboard in Resources */,
 				A79A186223AD3F9300469EF6 /* AHProductUnitPrice.storyboard in Resources */,
 				A7C463C123D1A8C100950D84 /* AHReceiving.storyboard in Resources */,
 				A7771B3323ABD06000CF5BDA /* AHProductCategory.storyboard in Resources */,
@@ -734,7 +750,9 @@
 				A7771B2F23ABCFAF00CF5BDA /* AHProductCategoryFormViewController.swift in Sources */,
 				A7771B1B23AB656000CF5BDA /* AHFactory.swift in Sources */,
 				A7C463CB23D1A97C00950D84 /* AHReceivingDetail.swift in Sources */,
+				A793069C23D309A000849A82 /* AHSalesListViewController.swift in Sources */,
 				A793068823D2D81400849A82 /* AHSales.swift in Sources */,
+				A79306A223D30A0900849A82 /* AHSalesCrud.swift in Sources */,
 				A79A183E23AD25D300469EF6 /* AHProductUnit.swift in Sources */,
 				A765FC1423D0A8FA008257AB /* FormTransTableViewCell.swift in Sources */,
 				A79A185023AD368500469EF6 /* AHProductUnitFormViewController.swift in Sources */,
@@ -742,6 +760,7 @@
 				A7C463B723D1601800950D84 /* AHPurchaseOrderFormViewController.swift in Sources */,
 				A7771B3123ABCFC900CF5BDA /* AHProductCategoryCrud.swift in Sources */,
 				A79A185423AD36BE00469EF6 /* AHProductUnitCrud.swift in Sources */,
+				A79306A423D31A6000849A82 /* AHSalesFormOptionViewController.swift in Sources */,
 				A793069423D2DD6B00849A82 /* AHStockUnitFormViewController.swift in Sources */,
 				A7771B4D23ABE17D00CF5BDA /* AHShopListViewController.swift in Sources */,
 				A7771B2123AB7BF700CF5BDA /* Style1TableViewCell.swift in Sources */,
@@ -753,6 +772,7 @@
 				A793069823D2DD9300849A82 /* AHStockUnitFormOptionViewController.swift in Sources */,
 				A79A184823AD321C00469EF6 /* AHPurchaseRequestFormViewController.swift in Sources */,
 				A7C463C723D1A90700950D84 /* AHReceivingCrud.swift in Sources */,
+				A793069E23D309B800849A82 /* AHSalesFormViewController.swift in Sources */,
 				A793068C23D2DAC500849A82 /* AHStockUnit.swift in Sources */,
 				A7C463C323D1A8D400950D84 /* AHReceivingListViewController.swift in Sources */,
 				A7771B3F23ABDCBA00CF5BDA /* AHSupplier.swift in Sources */,

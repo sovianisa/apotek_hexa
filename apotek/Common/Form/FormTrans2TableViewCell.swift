@@ -15,6 +15,7 @@ class FormTrans2TableViewCell: UITableViewCell {
     @IBOutlet weak var priceTextField: UITextField!
     @IBOutlet weak var text2Label: UILabel!
     @IBOutlet weak var text3Label: UILabel!
+    @IBOutlet weak var deleteButton: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()

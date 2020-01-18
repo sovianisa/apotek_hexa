@@ -19,6 +19,31 @@ func getAllProductUnitPrices() -> [AHProductUnitPrice] {
     return list
 }
 
+func getProductUnitPrice(barcode:String) -> AHProductUnitPrice {
+    let realm = try! Realm()
+    let listed = realm.objects(AHProductUnitPrice.self).filter("pup_pu.pu_prd.prd_barcode = '\(barcode)' AND pu_status = 1")
+    var list = [AHProductUnitPrice]()
+    for item in listed {
+        list.append(item)
+    }
+    
+    if list.count > 0 {
+        return list[0]
+    } else {
+        return AHProductUnitPrice()
+    }
+}
+
+func searchProductUnitPrice(keyword:String) -> [AHProductUnitPrice] {
+    let realm = try! Realm()
+    let listed = realm.objects(AHProductUnitPrice.self).filter("pup_pu.pu_prd.prd_name like '\(keyword)*' AND pup_status = 1")
+    var list = [AHProductUnitPrice]()
+    for item in listed {
+        list.append(item)
+    }
+    return list
+}
+
 func saveproductUnitPrice(productUnitPrice: AHProductUnitPrice) {
     let realm = try! Realm()
     try! realm.write {

@@ -21,7 +21,7 @@ func getAllStockUnits() -> [AHStockUnit] {
 
 func getStockUnit(barcode: String) -> AHStockUnit {
     let realm = try! Realm()
-    let listed = realm.objects(AHStockUnit.self).filter("su_pu.pu_prd.prd_barcode = '\(barcode)' AND pu_status = 1")
+    let listed = realm.objects(AHStockUnit.self).filter("su_rd.rd_pu.pu_prd.prd_barcode = '\(barcode)' AND su_status = 1")
     var list = [AHStockUnit]()
     for item in listed {
         list.append(item)

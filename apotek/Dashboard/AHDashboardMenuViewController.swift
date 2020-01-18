@@ -131,6 +131,10 @@ class AHDashboardMenuViewController: UIViewController, UICollectionViewDelegate,
             } else if indexPath.row == 3 {
                 goToSupplierPage()
             }
+        } else if indexPath.section == 3 {
+            if indexPath.row == 0 {
+                goToSalesPage()
+            }
         } else if indexPath.section == 4 {
             if indexPath.row == 0 {
                 goToStockUnitPage()
@@ -208,11 +212,18 @@ class AHDashboardMenuViewController: UIViewController, UICollectionViewDelegate,
         self.navigationController?.pushViewController(vc, animated: true)
 
     }
-    
-    func goToStockUnitPage(){
+
+    func goToStockUnitPage() {
         let storyboard = UIStoryboard(name: "AHStockUnit", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "AHStockUnitListViewController") as! AHStockUnitListViewController
         self.navigationController?.pushViewController(vc, animated: true)
+    }
+
+    func goToSalesPage() {
+        let storyboard = UIStoryboard(name: "AHSales", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "AHSalesListViewController") as! AHSalesListViewController
+        self.navigationController?.pushViewController(vc, animated: true)
+
     }
 
 }
